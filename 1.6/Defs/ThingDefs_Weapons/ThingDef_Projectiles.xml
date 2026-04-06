@@ -167,5 +167,83 @@
             </li>
         </modExtensions>
     </ThingDef>
+    
+<ThingDef ParentName="BaseBullet">
+  		<defName>BEWH_MeltaBeam</defName>
+  		<label>melta beam</label>
+  		<description>a sustained beam of heat. good for melting armour.</description>
+		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
+		<category>Projectile</category>
+		<drawOffscreen>true</drawOffscreen>
+		<seeThroughFog>true</seeThroughFog>
+        <uiIconPath>Things/Projectile/Seg_COTO_MeltaBeam2</uiIconPath>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Seg_COTO_MeltaBeam2</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+
+		<projectile>
+			<damageDef>Seg_MeltaDamage</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<armorPenetrationBase>2.00</armorPenetrationBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>999</speed>
+		</projectile>
+
+		<modExtensions>
+			<li Class="taranchuk_lasers.LaserProperties">
+				<damageTickRate>10</damageTickRate>
+				<lifetimeTicks>20</lifetimeTicks>
+
+				<beamWidth>2</beamWidth>
+				<beamWidthDrawScale>2.5</beamWidthDrawScale>
+
+				<sweepRatePerTick>0.1</sweepRatePerTick>
+				<maxSweepAngle>1</maxSweepAngle>
+
+				<damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
+				<debugCells>false</debugCells>
+
+				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
+				<lockOnTarget>true</lockOnTarget>
+			</li>
+             <li Class="Core40k.DefModExtension_AmmoChanger">
+                <effectiveRange>15.9</effectiveRange>
+                <warmupTime>10</warmupTime>
+                <shotsPerBurst>1</shotsPerBurst>
+            </li>
+		</modExtensions>
+	</ThingDef>
+
+   <VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>Seg_WarpflameShot</defName>
+		<label>flamer shot</label>
+		<thingClass>VEF.Weapons.FlamethrowProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/Warpflamer_Flame</texPath>
+			<texPathFadeOut>Things/Projectiles/WarpFlamer_End</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Seg_WarpflameDamage</damageDef>
+			<speed>45</speed>
+			<damageAmountBase>2</damageAmountBase>
+		</projectile>
+
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>55</lifeTimeDuration>
+		<widthScaleFactor>0.65</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(0, 0, -1)</startingPositionOffset>
+		<totalSizeScale>1.15</totalSizeScale>
+		<tickFrameRate>2</tickFrameRate>
+		<finalTickFrameRate>5</finalTickFrameRate>
+		<tickDamageRate>20</tickDamageRate>
+		<dealsDamageOnce>false</dealsDamageOnce>
+		<minDistanceToAffect>1</minDistanceToAffect>
+	</VEF.Weapons.ExpandableProjectileDef>
+
 
 </Defs>
