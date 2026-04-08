@@ -216,7 +216,54 @@
             </li>
 		</modExtensions>
 	</ThingDef>
+<ThingDef ParentName="BaseBullet">
+  		<defName>BEWH_VolkiteBeam</defName>
+  		<label>volkite beam</label>
+  		<description>a sustained beam of energy. good for melting armour.</description>
+		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
+		<category>Projectile</category>
+		<drawOffscreen>true</drawOffscreen>
+		<seeThroughFog>true</seeThroughFog>
+        <uiIconPath>Things/Projectiles/BEWH_VolkBeam1</uiIconPath>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectiles/BEWH_VolkBeam1</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
 
+		<projectile>
+			<damageDef>Vaporize</damageDef>
+			<damageAmountBase>60</damageAmountBase>
+			<armorPenetrationBase>2.00</armorPenetrationBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+
+		<modExtensions>
+			<li Class="taranchuk_lasers.LaserProperties">
+				<damageTickRate>10</damageTickRate>
+				<lifetimeTicks>20</lifetimeTicks>
+
+				<beamWidth>2</beamWidth>
+				<beamWidthDrawScale>2.5</beamWidthDrawScale>
+
+				<sweepRatePerTick>0.1</sweepRatePerTick>
+				<maxSweepAngle>1</maxSweepAngle>
+
+				<damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
+				<debugCells>false</debugCells>
+
+				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
+				<lockOnTarget>true</lockOnTarget>
+			</li>
+             <li Class="Core40k.DefModExtension_AmmoChanger">
+                <effectiveRange>15.9</effectiveRange>
+                <warmupTime>10</warmupTime>
+                <shotsPerBurst>1</shotsPerBurst>
+            </li>
+		</modExtensions>
+	</ThingDef>
    <VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>Seg_WarpflameShot</defName>
 		<label>flamer shot</label>
@@ -243,6 +290,24 @@
 		<tickDamageRate>20</tickDamageRate>
 		<dealsDamageOnce>false</dealsDamageOnce>
 		<minDistanceToAffect>1</minDistanceToAffect>
+         <modExtensions>
+            <li Class="Core40k.DefModExtension_AmmoChanger">
+                <effectiveRange>24</effectiveRange>
+                <warmupTime>5.1</warmupTime>
+                <shotsPerBurst>1</shotsPerBurst>
+            </li>
+              <li Class="GW_PsyDamage.ModExtension_PsyToDamage">
+                <minimumPsySensitivityToApply>1</minimumPsySensitivityToApply>
+                <damagePerThresholdMark>0.50</damagePerThresholdMark>
+<!--  + 5% bonus per level  -->
+                <applyBonusEveryPercent>0.10</applyBonusEveryPercent>
+<!--  + apply bonus every 10% above minimumPsySensitivityToApply  -->
+                <showBonusDamageText>true</showBonusDamageText>
+<!--  show floating text on target pawn  -->
+                <dealLessDamageIfBelowThreshold>true</dealLessDamageIfBelowThreshold>
+                <useUserPsySensitivityForScaling>true</useUserPsySensitivityForScaling>
+            </li>
+        </modExtensions>
 	</VEF.Weapons.ExpandableProjectileDef>
 
 
