@@ -1080,5 +1080,60 @@
       </li>
     </comps>
   </ThingDef>
+  <ThingDef ParentName="BEWH_AstartesRangedBase">
+    <defName>BEWH_PsyBoltCarbine</defName>
+    <label>Inferno Bolter</label>
+    <description>A versatile, rapid-fire weapon built on the Mk. II Cawl-pattern chassis, primarily used for special operations. Compact yet powerful, it can chamber a wide variety of specialized ammunition, allowing its user to adapt to any battlefield scenario.\n\nAvailable Loadout: Standard, Inferno, Metal Storm, Tempest</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/Boltbased/TSON_Inferno_bolter</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <!-- <uiIconScale>1</uiIconScale> -->
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>46500</WorkToMake>
+      <Mass>4.3</Mass>
+      <AccuracyTouch>0.5</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.5</AccuracyMedium>
+      <AccuracyLong>0.3</AccuracyLong>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>11</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>55</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BEWH_InfernoBolterRound</defaultProjectile>
+        <warmupTime>0.88</warmupTime>
+        <range>32.9</range>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <burstShotCount>7</burstShotCount>
+        <soundCast>BEWH_SFX_BolterShot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="Core40k.CompProperties_AmmoChanger">
+        <compClass>Core40k.Comp_AmmoChanger</compClass>
+        <availableProjectiles>
+          <li>BEWH_InfernoBolterRound</li>
+          <li>BEWH_BolterRoundInferno</li>
+          <li>BEWH_BolterRoundTempest</li>
+        </availableProjectiles>
+      </li>
+    </comps>
+  </ThingDef>
 
 </Defs>
