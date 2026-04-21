@@ -1,0 +1,25 @@
+<Defs>
+<PawnKindDef ParentName="BaseFleshbeastKind">
+    <defName>Seg_DeathGuard_PlagueBearer</defName>
+    <label>plaguebearer</label>
+    <race>Seg_DeathGuard_PlagueBearer</race>
+    <abilities>
+      <li>AcidSpray</li>
+    </abilities> 
+    <combatPower>70</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/ToolUser/PlagueBearer</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.2</drawSize>
+        </bodyGraphicData>
+        <silhouetteGraphicData>
+          <texPath>Things/Pawn/Fleshbeast/Toughspike/Toughspike_MenuIcon</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>2</drawSize>
+        </silhouetteGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  </Defs>

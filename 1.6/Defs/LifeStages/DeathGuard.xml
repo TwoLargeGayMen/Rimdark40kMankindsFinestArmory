@@ -1,0 +1,6 @@
+<Defs>
+<LifeStageDef ParentName="EntityFullyFormed">
+    <defName>FullyFormed_PlagueBearer</defName>
+    <bodyDrawOffset>(0, 0, 0.25)</bodyDrawOffset>
+  </LifeStageDef>
+</Defs>

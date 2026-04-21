@@ -31,7 +31,7 @@
     <scaleDamageToBuildingsBasedOnFlammability>true</scaleDamageToBuildingsBasedOnFlammability>
     <combatLogRules>Damage_Flame</combatLogRules>
   </DamageDef>
-<DamageDef Name="Seg_Warpflame">
+<DamageDef Name="Seg_WarpflameDamage">
     <defName>Seg_WarpflameDamage</defName>
     <label>Warpflame</label>
     <workerClass>DamageWorker_AddInjury</workerClass>
@@ -59,6 +59,44 @@
     <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
     <scaleDamageToBuildingsBasedOnFlammability>true</scaleDamageToBuildingsBasedOnFlammability>
     <combatLogRules>Damage_Flame</combatLogRules>
+  </DamageDef>
+  <DamageDef Name="Seg_PlaugeflameDamage">
+    <defName>Seg_PlaugeflameDamage</defName>
+    <label>Plaugeflame</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} was turned into a plaugebearer by nurgles rot. bummer.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <defaultStoppingPower>1.5</defaultStoppingPower>
+    <defaultArmorPenetration>2</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>0</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>0</buildingDamageFactorPassable>
+    <plantDamageFactor>40</plantDamageFactor>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastDry</explosionCellFleck>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>20</minDamageToFragment>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <explosionColorCenter>(0, 243, 254)</explosionColorCenter>
+    <explosionColorEdge>(0, 190, 255)</explosionColorEdge>
+    <soundExplosion>BEWH_SFX_PlasmaHit</soundExplosion>
+    <expolosionPropagationSpeed>0.25</expolosionPropagationSpeed>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <corpseDamageFactor>0</corpseDamageFactor>
+    <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+    <scaleDamageToBuildingsBasedOnFlammability>true</scaleDamageToBuildingsBasedOnFlammability>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+     <additionalHediffs>
+      <li>
+        <hediff>Seg_DG_NurglesRot</hediff>
+        <severityPerDamageDealt>0.01</severityPerDamageDealt>
+        <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+        <inverseStatScaling>true</inverseStatScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
   </DamageDef>
 
 

@@ -1,0 +1,219 @@
+<Defs>
+<HediffDef>
+    <defName>Seg_DG_NurglesRot</defName>
+    <label>Nurgle's rot</label>
+    <description>An unholy affliction that causes rapid decay and corruption of the body, causing the victim to become a plaugebearer on death.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.35, 0.45, 0.05)</defaultLabelColor>
+    <lethalSeverity>1</lethalSeverity>
+    <canApplyDodChanceForCapacityChanges>true</canApplyDodChanceForCapacityChanges>
+    <makesSickThought>true</makesSickThought>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <taleOnVisible>ToxicityRevealed</taleOnVisible>
+    <initialSeverity> 0.01</initialSeverity>
+
+
+    <comps>
+        <li Class="HediffCompProperties_SurgeryInspectable">
+            <surgicalDetectionDesc>{PAWN_nameDef} is showing signs of exposure to nurgles rot. Faith and time are all that can cure this disease.</surgicalDetectionDesc>
+        </li>
+        <li Class="HediffCompProperties_Immunizable">
+            <compClass>HediffComp_ImmunizableToxic</compClass>
+            <severityPerDayNotImmune>-0.01</severityPerDayNotImmune>
+        </li>
+    <li Class="Hediff_PawnConverter.HediffCompProperties_ConvertPawnAfterFullSeverity">
+        <pawnKindDefs>
+	        <li>Seg_DeathGuard_PlagueBearer</li>
+        </pawnKindDefs>
+        <!--<immuneXenotypeDef>
+	        <li>XenoTypeDef1</li>
+        </immuneXenotypeDef>-->
+       <removeIfImmune>true</removeIfImmune>
+       <isInfectiousToMechanoid>false</isInfectiousToMechanoid>
+       <!--<immuneHediffDef>
+	        <li>Hediff1</li>
+	        <li>Hediff2</li>
+	        <li>Hediff3</li>
+            <li>Hediff4</li>
+       </immuneHediffDef> -->
+       <inheritName>true</inheritName>
+        <inheritAge>true</inheritAge>
+        <inheritBackground>false</inheritBackground>
+        <inheritSkills>false</inheritSkills>
+        <isPlayer>true</isPlayer>
+       <factionDef>PlayerColony</factionDef>
+        <numberToSpawn>1</numberToSpawn>
+       <severityToTransform>.99</severityToTransform>
+    </li>
+    </comps>
+
+    <stages>
+        <li>
+            <label>initial</label>
+            <becomeVisible>false</becomeVisible>
+        </li>
+
+        <li>
+            <label>initial</label>
+            <minSeverity>0.04</minSeverity>
+            <statOffsets>
+                <FilthRate>2</FilthRate>
+                <Beauty>-1</Beauty>
+			</statOffsets>
+            <capMods>
+                <li>
+                    <capacity>Consciousness</capacity>
+                    <offset>-0.05</offset>
+                </li>
+                <li>
+                    <capacity>BloodFiltration</capacity>
+                    <offset>-0.20</offset>
+                </li>
+            </capMods>
+            <hediffGivers>
+                <li Class="HediffGiver_Random">
+                    <hediff>Carcinoma</hediff>
+                    <mtbDays>400</mtbDays>
+                    <canAffectAnyLivePart>true</canAffectAnyLivePart>
+                </li>
+            </hediffGivers>
+        </li>
+
+        <li>
+            <label>minor</label>
+            <minSeverity>0.20</minSeverity>
+            <vomitMtbDays>1</vomitMtbDays>
+            <statOffsets>
+                <FilthRate>3</FilthRate>
+                <PawnBeauty>-2</PawnBeauty>
+			</statOffsets>
+            <capMods>
+                <li>
+                    <capacity>Consciousness</capacity>
+                    <offset>-0.10</offset>
+                </li>
+                <li>
+                    <capacity>BloodFiltration</capacity>
+                    <offset>-0.15</offset>
+                </li>
+                  <li>
+                    <capacity>BloodFiltration</capacity>
+                    <offset>-0.10</offset>
+                </li>
+            </capMods>
+            <hediffGivers>
+                <li Class="HediffGiver_Random">
+                    <hediff>Carcinoma</hediff>
+                    <mtbDays>250</mtbDays>
+                    <canAffectAnyLivePart>true</canAffectAnyLivePart>
+                </li>
+            </hediffGivers>
+        </li>
+
+        <li>
+            <label>moderate</label>
+            <minSeverity>0.40</minSeverity>
+            <vomitMtbDays>2</vomitMtbDays>
+            <statOffsets>
+                <FilthRate>4</FilthRate>
+                <PawnBeauty>-3</PawnBeauty>
+                <MoveSpeed>-0.5</MoveSpeed>
+                <IncomingDamageFactor>0.25</IncomingDamageFactor>
+                <PainShockThreshold>0.20</PainShockThreshold>
+			</statOffsets>
+            <painFactor>0.50</painFactor>
+            <capMods>
+                <li>
+                    <capacity>Consciousness</capacity>
+                    <offset>-0.15</offset>
+                </li>
+                <li>
+                    <capacity>BloodFiltration</capacity>
+                    <offset>-0.30</offset>
+                </li>
+            </capMods>
+            <hediffGivers>
+                <li Class="HediffGiver_Random">
+                    <hediff>Carcinoma</hediff>
+                    <mtbDays>150</mtbDays>
+                    <canAffectAnyLivePart>true</canAffectAnyLivePart>
+                </li>
+            </hediffGivers>
+        </li>
+
+        <li>
+            <label>serious</label>
+            <minSeverity>0.60</minSeverity>
+            <vomitMtbDays>.45</vomitMtbDays>
+            <statOffsets>
+                <FilthRate>5</FilthRate>
+                <PawnBeauty>-5</PawnBeauty>
+                <MoveSpeed>-0.7</MoveSpeed>
+                <IncomingDamageFactor>0.50</IncomingDamageFactor>
+                <PainShockThreshold>1</PainShockThreshold>
+			</statOffsets>
+            <painFactor>0.25</painFactor>
+            <capMods>
+                <li>
+                    <capacity>Consciousness</capacity>
+                    <offset>-0.25</offset>
+                </li>
+                <li>
+                    <capacity>BloodFiltration</capacity>
+                    <offset>-0.50</offset>
+                </li>
+                <li>
+                    <capacity>BloodPumping</capacity>
+                    <offset>-0.30</offset>
+                </li>
+            </capMods>
+            <hediffGivers>
+                <li Class="HediffGiver_Random">
+                    <hediff>Carcinoma</hediff>
+                    <mtbDays>60</mtbDays>
+                    <canAffectAnyLivePart>true</canAffectAnyLivePart>
+                </li>
+            </hediffGivers>
+        </li>
+
+        <li>
+            <label>extreme</label>
+            <minSeverity>0.80</minSeverity>
+            <vomitMtbDays>0.35</vomitMtbDays>
+              <statOffsets>
+                <FilthRate>10</FilthRate>
+                <PawnBeauty>-20</PawnBeauty>
+                <MoveSpeed>-2.7</MoveSpeed>
+                <IncomingDamageFactor>0.25</IncomingDamageFactor>
+                <PainShockThreshold>1</PainShockThreshold>
+			</statOffsets>
+            <painFactor>0</painFactor>
+            <capMods>
+                <li>
+                    <capacity>Consciousness</capacity>
+                    <setMax>0.40</setMax>
+                </li>
+                <li>
+                    <capacity>Consciousness</capacity>
+                    <offset>-0.25</offset>
+                </li>
+                <li>
+                    <capacity>BloodFiltration</capacity>
+                    <setMax>0.10</setMax>
+                </li>
+                <li>
+                    <capacity>BloodPumping</capacity>
+                    <setMax>.4</setMax>
+                </li>
+            </capMods>
+            <hediffGivers>
+                <li Class="HediffGiver_Random">
+                    <hediff>Carcinoma</hediff>
+                    <mtbDays>20</mtbDays>
+                    <canAffectAnyLivePart>true</canAffectAnyLivePart>
+                </li>
+            </hediffGivers>
+        </li>
+    </stages>
+</HediffDef>
+</Defs>

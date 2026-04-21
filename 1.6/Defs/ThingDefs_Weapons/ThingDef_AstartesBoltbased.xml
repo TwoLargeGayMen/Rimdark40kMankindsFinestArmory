@@ -834,7 +834,7 @@
   </ThingDef>
    <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltCarbine_CombiWarpFlame</defName>
-    <label>combi-warp flame bolt carbine</label>
+    <label>combi-flamer bolt carbine</label>
     <description>A precision variant of the Bolt Carbine, trading the rate of fire for superior range and accuracy due to its advanced optics. It retains the versatility and compatibility with a wide variety of ammunition.\n\nAvailable Loadout: Standard, Inferno, Metal Storm, Tempest</description>
     <graphicData>
       <texPath>Things/Weapons/Ranged/Boltbased/BEWH_BoltCarbineCombiFlamer</texPath>
@@ -927,7 +927,102 @@
     </li>-->
     </modExtensions>
   </ThingDef>
-  <ThingDef ParentName="BEWH_AstartesRangedBase">
+  <ThingDef ParentName="BEWH_AstartesRangedBase" mayRequire="kentington.saveourship2">
+    <defName>BEWH_AstartesBoltCarbine_CombiPinkGoo</defName>
+    <label>combi-nanite bolt carbine</label>
+    <description>A precision variant of the Bolt Carbine, trading the rate of fire for superior range and accuracy due to its advanced optics. It retains the versatility and compatibility with a wide variety of ammunition.\n\nAvailable Loadout: Standard, Inferno, Metal Storm, Tempest</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/Boltbased/BEWH_BoltCarbineCombiFlamer</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <!-- <uiIconScale>1</uiIconScale> -->
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>46500</WorkToMake>
+      <Mass>4.5</Mass>
+      <AccuracyTouch>0.48</AccuracyTouch>
+      <AccuracyShort>0.56</AccuracyShort>
+      <AccuracyMedium>0.68</AccuracyMedium>
+      <AccuracyLong>0.48</AccuracyLong>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>11</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>55</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BEWH_BolterRound</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>37.9</range>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>BEWH_SFX_BolterShot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="Core40k.CompProperties_AmmoChanger">
+        <compClass>Core40k.Comp_AmmoChanger</compClass>
+        <availableProjectiles>
+          <li>BEWH_BolterRound</li>
+          <li>BEWH_BolterRoundMetalStorm</li>
+          <li>BEWH_BolterRoundInferno</li>
+          <li>BEWH_BolterRoundTempest</li>
+          <li>BEWH_BolterRoundKraken</li>
+          <li>Seg_BombMechaniteFlameShot</li>
+        </availableProjectiles>
+      </li>
+      <li Class="Core40k.CompProperties_MultiColor">
+        <colorMaskAmount>2</colorMaskAmount>
+        <defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
+        <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+      </li>
+      <li Class="Core40k.CompProperties_WeaponDecoration" />
+    </comps>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <weaponCarryDrawOffsets>
+          <north>
+            <angleOffset>90</angleOffset>
+            <drawOffset>(0, 0, -0.2)</drawOffset>
+          </north>
+          <east>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </east>
+          <south>
+            <angleOffset>-20</angleOffset>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </south>
+          <west>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </west>
+        </weaponCarryDrawOffsets>
+      </li>
+      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+        <tabDefs>
+          <li>BEWH_WeaponColoring</li>
+          <li>BEWH_WeaponDecoration</li>
+        </tabDefs>
+      </li>
+      <!-- <li Class="Core40k.DefModExtension_GivesVEFAbility">
+      <abilityDefs>
+        <li>2lgm_RimdarkPatches_MeltaBeam</li>
+      </abilityDefs>
+    </li>-->
+    </modExtensions>
+  </ThingDef>
+  <!--<ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>TSON_Warpflamer</defName>
     <label>Warpflamer</label>
     <description>A precision variant of the Bolt Carbine, trading the rate of fire for superior range and accuracy due to its advanced optics. It retains the versatility and compatibility with a wide variety of ammunition.\n\nAvailable Loadout: Standard, Inferno, Metal Storm, Tempest</description>
@@ -937,7 +1032,6 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1</drawSize>
     </graphicData>
-    <!-- <uiIconScale>1</uiIconScale> -->
     <soundInteract>Interact_ChargeRifle</soundInteract>
     <statBases>
       <WorkToMake>46500</WorkToMake>
@@ -978,17 +1072,15 @@
        <li Class="GW_PsyDamage.ModExtension_PsyToDamage">
                 <minimumPsySensitivityToApply>1</minimumPsySensitivityToApply>
                 <damagePerThresholdMark>0.50</damagePerThresholdMark>
-<!--  + 5% bonus per level  -->
+
                 <applyBonusEveryPercent>0.10</applyBonusEveryPercent>
-<!--  + apply bonus every 10% above minimumPsySensitivityToApply  -->
                 <showBonusDamageText>true</showBonusDamageText>
-<!--  show floating text on target pawn  -->
                 <dealLessDamageIfBelowThreshold>true</dealLessDamageIfBelowThreshold>
             <useUserPsySensitivityForScaling>true</useUserPsySensitivityForScaling>
                 </li>
       </modExtensions>
-  </ThingDef>
-   <ThingDef ParentName="BEWH_AstartesRangedBase">
+   </ThingDef>-->
+   <!--<ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_SoulreaperCannon</defName>
     <label>Soulreaper Cannon</label>
     <description>Fires a torrent of psy-reactive, warp tainted bolts with devastating psychic energy.</description>
@@ -1061,11 +1153,8 @@
       <li Class="GW_PsyDamage.ModExtension_PsyToDamage">
                 <minimumPsySensitivityToApply>1</minimumPsySensitivityToApply>
                 <damagePerThresholdMark>0.50</damagePerThresholdMark>
-<!--  + 5% bonus per level  -->
-                <applyBonusEveryPercent>1</applyBonusEveryPercent>
-<!--  + apply bonus every 10% above minimumPsySensitivityToApply  -->
+                <applyBonusEveryPercent>50</applyBonusEveryPercent>
                 <showBonusDamageText>true</showBonusDamageText>
-<!--  show floating text on target pawn  -->
                 <dealLessDamageIfBelowThreshold>true</dealLessDamageIfBelowThreshold>
             <useUserPsySensitivityForScaling>true</useUserPsySensitivityForScaling>
                 </li>
@@ -1074,12 +1163,16 @@
       <li Class="Core40k.CompProperties_AmmoChanger">
         <compClass>Core40k.Comp_AmmoChanger</compClass>
         <availableProjectiles>
-          <li>BEWH_InfernoBolterRound</li>
+          <li>BEWH_BolterRound</li>
+          <li>BEWH_BolterRoundMetalStorm</li>
+          <li>BEWH_BolterRoundInferno</li>
+          <li>BEWH_BolterRoundTempest</li>
+          <li>BEWH_BolterRoundKraken</li>
           <li>Seg_WarpflameShot</li>
         </availableProjectiles>
       </li>
     </comps>
-  </ThingDef>
+  </ThingDef> -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_PsyBoltCarbine</defName>
     <label>Inferno Bolter</label>
@@ -1134,6 +1227,55 @@
         </availableProjectiles>
       </li>
     </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BEWH_AstartesRangedBase">
+    <defName>Seg_DeathGuard_Plaugesprayer</defName>
+    <label>Plaguesprayer</label>
+    <description>An unholy relic of nurgle, shoots a disgusting misama that eats through any known armor and spreads the most holy of diseases, Nurgle's Rot.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/Boltbased/Seg_DG_PlaugeSprayer</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <!-- <uiIconScale>1</uiIconScale> -->
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>46500</WorkToMake>
+      <Mass>4.5</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.56</AccuracyShort>
+      <AccuracyMedium>0.68</AccuracyMedium>
+      <AccuracyLong>0.48</AccuracyLong>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>11</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>55</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_PlaugeflameShot</defaultProjectile>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				<warmupTime>0.6</warmupTime>
+				<range>12</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>GW_SM_Flamer_Sound</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
   </ThingDef>
 
 </Defs>

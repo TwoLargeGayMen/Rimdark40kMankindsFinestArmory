@@ -290,24 +290,88 @@
 		<tickDamageRate>20</tickDamageRate>
 		<dealsDamageOnce>false</dealsDamageOnce>
 		<minDistanceToAffect>1</minDistanceToAffect>
-         <modExtensions>
-            <li Class="Core40k.DefModExtension_AmmoChanger">
-                <effectiveRange>24</effectiveRange>
-                <warmupTime>5.1</warmupTime>
-                <shotsPerBurst>1</shotsPerBurst>
-            </li>
-              <li Class="GW_PsyDamage.ModExtension_PsyToDamage">
-                <minimumPsySensitivityToApply>1</minimumPsySensitivityToApply>
-                <damagePerThresholdMark>0.50</damagePerThresholdMark>
-<!--  + 5% bonus per level  -->
-                <applyBonusEveryPercent>0.10</applyBonusEveryPercent>
-<!--  + apply bonus every 10% above minimumPsySensitivityToApply  -->
-                <showBonusDamageText>true</showBonusDamageText>
-<!--  show floating text on target pawn  -->
-                <dealLessDamageIfBelowThreshold>true</dealLessDamageIfBelowThreshold>
-                <useUserPsySensitivityForScaling>true</useUserPsySensitivityForScaling>
-            </li>
-        </modExtensions>
+	</VEF.Weapons.ExpandableProjectileDef>
+    <VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>Seg_BombMechaniteFlameShot</defName>
+		<label>Nanite Flame shot</label>
+		<thingClass>VEF.Weapons.FlamethrowProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/Warpflamer_Flame</texPath>
+			<texPathFadeOut>Things/Projectiles/WarpFlamer_End</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>BombMechanite</damageDef>
+			<speed>45</speed>
+			<damageAmountBase>2</damageAmountBase>
+		</projectile>
+
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>55</lifeTimeDuration>
+		<widthScaleFactor>0.65</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(0, 0, -1)</startingPositionOffset>
+		<totalSizeScale>1.15</totalSizeScale>
+		<tickFrameRate>2</tickFrameRate>
+		<finalTickFrameRate>5</finalTickFrameRate>
+		<tickDamageRate>20</tickDamageRate>
+		<dealsDamageOnce>false</dealsDamageOnce>
+		<minDistanceToAffect>1</minDistanceToAffect>
+	</VEF.Weapons.ExpandableProjectileDef>
+    <VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>Seg_PlaugeflameShot</defName>
+		<label>Plauge spray</label>
+		<thingClass>VEF.Weapons.ExpandableProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/PlaugeFlamer_Flame</texPath>
+			<texPathFadeOut>Things/Projectiles/PlaugeFlamer_End</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Seg_PlaugeflameDamage</damageDef>
+			<speed>45</speed>
+			<damageAmountBase>1</damageAmountBase>
+		</projectile>
+
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>55</lifeTimeDuration>
+		<widthScaleFactor>0.65</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(0, 0, -1)</startingPositionOffset>
+		<totalSizeScale>1.15</totalSizeScale>
+		<tickFrameRate>2</tickFrameRate>
+		<finalTickFrameRate>5</finalTickFrameRate>
+		<tickDamageRate>20</tickDamageRate>
+		<dealsDamageOnce>false</dealsDamageOnce>
+		<minDistanceToAffect>1</minDistanceToAffect>
+	</VEF.Weapons.ExpandableProjectileDef>
+    <VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>Seg_BaneWolfShot</defName>
+		<label>Chem Cannon</label>
+		<thingClass>VEF.Weapons.FlamethrowProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/PlaugeFlamer_Flame</texPath>
+			<texPathFadeOut>Things/Projectiles/PlaugeFlamer_End</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>AcidBurn</damageDef>
+			<speed>45</speed>
+			<damageAmountBase>8</damageAmountBase>
+            <armorPenetrationBase>2.00</armorPenetrationBase>
+		</projectile>
+
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>120</lifeTimeDuration>
+		<widthScaleFactor>0.65</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(0, 0, -1)</startingPositionOffset>
+		<totalSizeScale>1.15</totalSizeScale>
+		<tickFrameRate>2</tickFrameRate>
+		<finalTickFrameRate>5</finalTickFrameRate>
+		<tickDamageRate>20</tickDamageRate>
+		<dealsDamageOnce>false</dealsDamageOnce>
+		<minDistanceToAffect>1</minDistanceToAffect>
 	</VEF.Weapons.ExpandableProjectileDef>
 
 
