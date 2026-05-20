@@ -5,7 +5,7 @@
   <ThingDef ParentName="BEWH_AstartesMeleeBase">
     <defName>BEWH_AstartesKnife</defName>
     <label>combat knife</label>
-    <description>A standard-issue Astartes combat knife that is given to every Space Marine as soon as they recover from gene-seed implantation. Roughly the size of a normal human short sword, the knife has a monomolecular edge that never dulls.\n\nPassive: Terminal Precision - Small chance to deal critical damage to the enemy with each strike.</description>
+    <description>A standard-issue Astartes combat knife that is given to every Space Marine as soon as they recover from gene-seed implantation. Roughly the size of a normal human short sword, the knife has a monomolecular edge that never dulls.\n\n&lt;color=#ffd75d&gt;Terminal Precision:&lt;/color&gt; This weapon has a small chance to deal critical damage to the enemy with each strike.</description>
     <recipeMaker>
       <skillRequirements>
         <Crafting>8</Crafting>
@@ -92,7 +92,7 @@
   <ThingDef ParentName="BEWH_AstartesMeleeBase">
     <defName>BEWH_AstartesPowerSword_Judiciar</defName>
     <label>judiciar power sword</label>
-    <description>A heavy, two-handed power sword, a Judiciar's primary instrument of execution. Although slower to wield than standard power swords, it deals greater damage. Its weight, balance, and blade geometry are optimized for powerful, precise strikes, allowing a Judiciar to decapitate his foes with ease.\n\nPassive: Final Judgment - Wielder has a chance to deal a finishing blow, decapitating the humanlike enemy.</description>
+    <description>A heavy, two-handed power sword, a Judiciar's primary instrument of execution. Although slower to wield than standard power swords, it deals greater damage. Its weight, balance, and blade geometry are optimized for powerful, precise strikes, allowing a Judiciar to decapitate his foes with ease.\n\n&lt;color=#ffd75d&gt;Final Judgment:&lt;/color&gt; This weapon has a chance to deal a devastating finishing blow, decapitating the humanlike enemy.</description>
     <soundInteract>BEWH_SFX_PowerswordInteract</soundInteract>
     <meleeHitSound>BEWH_SFX_PowerswordHit</meleeHitSound>
     <recipeMaker>

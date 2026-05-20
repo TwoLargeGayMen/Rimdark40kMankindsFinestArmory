@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>BEWH_Undersuit</defName>
+    <label>undersuit</label>
+    <description>Reinforced Astartes Undersuit - a skintight full-body suit worn beneath Power Armor, covering the wearer from neck to toe. It contains all the required interface ports and neural connectors that link to the armor's systems. This allows the wearer to "feel" through the suit and control the armor intuitively. The undersuit also offers a modest protection against minor impacts and some environmental hazards. While it is far from combat-grade armor by itself, it is definitely tougher than ordinary clothing.</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>BEWH_PowerArmorMkI</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="false">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Armor/Undersuit/BEWH_Undersuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>Cutout</shaderType>
+    </graphicData>
+    <statBases Inherit="false">
+      <WorkToMake>10000</WorkToMake>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Mass>3</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.46</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.32</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.35</ArmorRating_Heat>
+      <Insulation_Cold>16</Insulation_Cold>
+      <Insulation_Heat>14</Insulation_Heat>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.33</VacuumResistance>
+      <ToxicEnvironmentResistance>0.6</ToxicEnvironmentResistance>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <costList>
+      <Steel>50</Steel>
+      <Plasteel>15</Plasteel>
+      <Chemfuel>35</Chemfuel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+        <li>Hands</li>
+        <li>Feet</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Armor/Undersuit/BEWH_Undersuit</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>IndustrialMilitaryBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>HiTechArmor</li>
+    </tradeTags>
+	<smeltable>false</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <tradeability>Sellable</tradeability>
+  </ThingDef>
+
+</Defs>
