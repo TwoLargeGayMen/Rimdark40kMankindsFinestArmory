@@ -1,11 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-<!-- Trinkets -->
-  <Core40k.WeaponDecorationTypeDef>
-    <defName>BEWH_DecoCategory_trinkets</defName>
-    <label>Trinkets</label>
-  </Core40k.WeaponDecorationTypeDef>
 
   <Core40k.WeaponDecorationDef>
     <defName>BEWH_DecoTrinket_0</defName>
@@ -24,7 +18,7 @@
       <li>BEWH_AstartesBoltRifle_Sniper</li>
       <li>BEWH_AstartesPlasmaIncinerator</li>
     </appliesTo>
-      <shaderType>Cutout</shaderType>
+    <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
     <defaultColour>(240,176,29)</defaultColour>
     <decorationType>BEWH_DecoCategory_trinkets</decorationType>
@@ -134,7 +128,7 @@
       <li>BEWH_AstartesBoltRifle_Sniper</li>
       <li>BEWH_AstartesPlasmaIncinerator</li>
     </appliesTo>
-      <shaderType>Cutout</shaderType>
+    <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
     <defaultColour>(240,176,29)</defaultColour>
     <decorationType>BEWH_DecoCategory_trinkets</decorationType>
@@ -227,7 +221,7 @@
     </weaponSpecificDrawData>
   </Core40k.WeaponDecorationDef>
 
-    <Core40k.WeaponDecorationDef>
+  <Core40k.WeaponDecorationDef>
     <defName>BEWH_DecoTrinket_2</defName>
     <label>Aquila</label>
     <description>...</description>
@@ -244,7 +238,7 @@
       <li>BEWH_AstartesBoltRifle_Sniper</li>
       <li>BEWH_AstartesPlasmaIncinerator</li>
     </appliesTo>
-      <shaderType>Cutout</shaderType>
+    <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
     <defaultColour>(240,176,29)</defaultColour>
     <decorationType>BEWH_DecoCategory_trinkets</decorationType>
@@ -354,7 +348,7 @@
       <li>BEWH_AstartesBoltRifle_Sniper</li>
       <li>BEWH_AstartesPlasmaIncinerator</li>
     </appliesTo>
-      <shaderType>Cutout</shaderType>
+    <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
     <defaultColour>(240,176,29)</defaultColour>
     <decorationType>BEWH_DecoCategory_trinkets</decorationType>

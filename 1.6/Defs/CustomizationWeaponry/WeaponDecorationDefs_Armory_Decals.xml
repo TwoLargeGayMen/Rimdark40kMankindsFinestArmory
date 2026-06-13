@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!-- Decals -->
-  <Core40k.WeaponDecorationTypeDef>
-    <defName>BEWH_DecoCategory_decals</defName>
-    <label>Decals</label>
-  </Core40k.WeaponDecorationTypeDef>
-
 <!-- Skulls 1 -->
   <Core40k.WeaponDecorationDef>
     <defName>BEWH_wDecoSkulls_1</defName>

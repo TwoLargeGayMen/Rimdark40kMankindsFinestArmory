@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
   <!-- Purity Seals -->
-  <Core40k.WeaponDecorationTypeDef>
+  <Core40k.DecorationTypeDef>
     <defName>BEWH_DecoCategory_Pseals</defName>
     <label>Purity Seals</label>
-  </Core40k.WeaponDecorationTypeDef>
-  
-<!-- Purity Seal 1 -->
+    <description>Purity Seals</description>
+  </Core40k.DecorationTypeDef>
+
+  <!-- Purity Seal 1 -->
   <Core40k.WeaponDecorationDef>
     <defName>BEWH_wDeco_Pseal_1</defName>
     <label>Purity Seal 1</label>
@@ -29,7 +30,7 @@
       <li>BEWH_AstartesPlasmaPistol</li>
       <li>BEWH_AstartesPlasmaIncinerator</li>
     </appliesTo>
-      <shaderType>Cutout</shaderType>
+    <shaderType>Cutout</shaderType>
     <colourable>false</colourable>
     <decorationType>BEWH_DecoCategory_Pseals</decorationType>
     <weaponSpecificDrawData>
@@ -189,7 +190,7 @@
     </weaponSpecificDrawData>
   </Core40k.WeaponDecorationDef>
 
-<!-- Purity Seal 2 -->
+  <!-- Purity Seal 2 -->
   <Core40k.WeaponDecorationDef>
     <defName>BEWH_wDeco_Pseal_2</defName>
     <label>Purity Seal 2</label>
@@ -209,7 +210,7 @@
       <li>BEWH_AstartesPlasmaPistol</li>
       <li>BEWH_AstartesPlasmaIncinerator</li>
     </appliesTo>
-      <shaderType>Cutout</shaderType>
+    <shaderType>Cutout</shaderType>
     <colourable>false</colourable>
     <decorationType>BEWH_DecoCategory_Pseals</decorationType>
     <weaponSpecificDrawData>
@@ -333,7 +334,7 @@
             <offset>(0.113, 2, -0.166)</offset>
           </dataNorth>
         </value>
-      </li>      
+      </li>
     </weaponSpecificDrawData>
   </Core40k.WeaponDecorationDef>
 

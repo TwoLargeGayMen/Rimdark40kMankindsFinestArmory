@@ -2,10 +2,10 @@
 <Defs>
 
 <!-- Wraps -->
-  <Core40k.WeaponDecorationTypeDef>
+  <Core40k.DecorationTypeDef>
     <defName>BEWH_DecoCategory_wraps</defName>
     <label>Wraps</label>
-  </Core40k.WeaponDecorationTypeDef>
+  </Core40k.DecorationTypeDef>
 
 <!-- Handle Wrap -->
   <Core40k.WeaponDecorationDef>

@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!-- Misc -->
-  <Core40k.WeaponDecorationTypeDef>
-    <defName>BEWH_DecoCategory_misc</defName>
-    <label>Decals</label>
-  </Core40k.WeaponDecorationTypeDef>
-
 <!-- Shells -->
   <Core40k.WeaponDecorationDef>
     <defName>BEWH_wDecoShells</defName>
