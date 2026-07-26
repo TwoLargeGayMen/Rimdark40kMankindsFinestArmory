@@ -1,6 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+    <!-- Heavy Bolter Bolt Explosive -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>BEWH_BolterRoundHeavy_explosive</defName>
+        <label>Heavy Bolt</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+            <texPath>Things/Projectiles/BEWH_BolterRound</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(0.8, 0.8)</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>BEWH_Bolt</damageDef> <!-- change -->
+            <damageAmountBase>25</damageAmountBase>
+            <armorPenetrationBase>0.98</armorPenetrationBase>
+            <stoppingPower>1.5</stoppingPower>
+            <explosionRadius>1</explosionRadius >
+            <soundExplode>Explosion_Rocket</soundExplode>
+            <screenShakeFactor>0.3</screenShakeFactor>
+            <speed>75</speed>
+        </projectile>
+    </ThingDef>
+
     <!-- Kraken -->
     <ThingDef ParentName="BaseBullet">
         <defName>BEWH_BolterRoundKraken</defName>
