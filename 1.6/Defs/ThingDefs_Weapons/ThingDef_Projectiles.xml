@@ -14,7 +14,7 @@
         <projectile>
             <damageDef>BEWH_Bolt</damageDef> <!-- change -->
             <damageAmountBase>25</damageAmountBase>
-            <armorPenetrationBase>0.98</armorPenetrationBase>
+            <armorPenetrationBase>0.65</armorPenetrationBase>
             <stoppingPower>1.5</stoppingPower>
             <explosionRadius>1</explosionRadius >
             <soundExplode>Explosion_Rocket</soundExplode>
@@ -22,6 +22,24 @@
             <speed>75</speed>
         </projectile>
     </ThingDef>
+
+	<!--Assault Cannon Projectile-->
+	<ThingDef ParentName="BaseBullet">
+		<defName>BEWH_AC_Projectile</defName>
+		<label>Assault Cannon shot</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>11</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<armorPenetrationBase>0.55</armorPenetrationBase>
+			<speed>80</speed>
+			<screenShakeFactor>0.4</screenShakeFactor>
+		</projectile>
+	</ThingDef>
 
     <!-- Kraken -->
     <ThingDef ParentName="BaseBullet">
