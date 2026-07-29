@@ -33,11 +33,11 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>11</damageAmountBase>
+			<damageAmountBase>5</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
-			<armorPenetrationBase>0.55</armorPenetrationBase>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
 			<speed>80</speed>
-			<screenShakeFactor>0.4</screenShakeFactor>
+			<screenShakeFactor>0.2</screenShakeFactor>
 		</projectile>
 	</ThingDef>
 

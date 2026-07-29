@@ -720,8 +720,8 @@
       <WorkToMake>47000</WorkToMake>
       <Mass>10</Mass>
       <AccuracyTouch>0.23</AccuracyTouch>
-      <AccuracyShort>0.29</AccuracyShort>
-      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyShort>0.28</AccuracyShort>
+      <AccuracyMedium>0.31</AccuracyMedium>
       <AccuracyLong>0.16</AccuracyLong>
       <RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
     </statBases>
@@ -746,8 +746,8 @@
         <defaultProjectile>BEWH_AC_Projectile</defaultProjectile>
         <warmupTime>2.7</warmupTime>
         <range>39.9</range>
-        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
-        <burstShotCount>60</burstShotCount>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>240</burstShotCount>
         <soundCast>Shot_Autocannon</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>10</muzzleFlashScale>
