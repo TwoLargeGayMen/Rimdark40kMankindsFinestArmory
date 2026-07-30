@@ -1,13 +1,7 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-<!-- Wraps -->
-  <Core40k.DecorationTypeDef>
-    <defName>BEWH_DecoCategory_wraps</defName>
-    <label>Wraps</label>
-  </Core40k.DecorationTypeDef>
-
-<!-- Handle Wrap -->
+  <!-- Handle Wrap -->
   <Core40k.WeaponDecorationDef>
     <defName>BEWH_DecoHandleWrap</defName>
     <label>Handle Wraps</label>
@@ -30,7 +24,7 @@
     <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
     <defaultColour>(72, 53, 31)</defaultColour>
-    <decorationType>BEWH_DecoCategory_wraps</decorationType>
+    <decorationType>BEWH_DecoCategory_Wraps</decorationType>
     <weaponSpecificDrawData>
       <li>
         <key>BEWH_AstartesBoltPistol</key>
@@ -190,7 +184,7 @@
     </weaponSpecificDrawData>
   </Core40k.WeaponDecorationDef>
 
-<!-- Leather Wrap -->
+  <!-- Leather Wrap -->
   <Core40k.WeaponDecorationDef>
     <defName>BEWH_DecoLeatherWrap</defName>
     <label>Leather Wraps</label>
@@ -214,7 +208,7 @@
     <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
     <defaultColour>(72, 53, 31)</defaultColour>
-    <decorationType>BEWH_DecoCategory_wraps</decorationType>
+    <decorationType>BEWH_DecoCategory_Wraps</decorationType>
     <weaponSpecificDrawData>
       <li>
         <key>BEWH_AstartesBoltCarbine</key>
@@ -324,7 +318,7 @@
     </weaponSpecificDrawData>
   </Core40k.WeaponDecorationDef>
 
-<!-- Chain Wrap -->
+  <!-- Chain Wrap -->
   <Core40k.WeaponDecorationDef>
     <defName>BEWH_DecoChainWrap</defName>
     <label>Chain Wraps</label>
@@ -347,7 +341,7 @@
     <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
     <defaultColour>(166, 166, 166)</defaultColour>
-    <decorationType>BEWH_DecoCategory_wraps</decorationType>
+    <decorationType>BEWH_DecoCategory_Wraps</decorationType>
     <weaponSpecificDrawData>
       <li>
         <key>BEWH_AstartesBoltPistol</key>

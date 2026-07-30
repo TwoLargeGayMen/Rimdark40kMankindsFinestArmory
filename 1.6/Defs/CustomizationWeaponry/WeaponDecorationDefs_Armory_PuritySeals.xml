@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- Purity Seals -->
-  <Core40k.DecorationTypeDef>
-    <defName>BEWH_DecoCategory_Pseals</defName>
-    <label>Purity Seals</label>
-    <description>Purity Seals</description>
-  </Core40k.DecorationTypeDef>
-
   <!-- Purity Seal 1 -->
   <Core40k.WeaponDecorationDef>
     <defName>BEWH_wDeco_Pseal_1</defName>

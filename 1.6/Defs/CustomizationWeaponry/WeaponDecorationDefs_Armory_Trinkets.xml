@@ -21,7 +21,7 @@
     <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
     <defaultColour>(240,176,29)</defaultColour>
-    <decorationType>BEWH_DecoCategory_trinkets</decorationType>
+    <decorationType>BEWH_DecoCategory_Trinkets</decorationType>
     <weaponSpecificDrawData>
       <li>
         <key>BEWH_AstartesBoltCarbine_Oculus</key>
@@ -131,7 +131,7 @@
     <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
     <defaultColour>(240,176,29)</defaultColour>
-    <decorationType>BEWH_DecoCategory_trinkets</decorationType>
+    <decorationType>BEWH_DecoCategory_Trinkets</decorationType>
     <weaponSpecificDrawData>
       <li>
         <key>BEWH_AstartesBoltCarbine_Oculus</key>
@@ -241,7 +241,7 @@
     <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
     <defaultColour>(240,176,29)</defaultColour>
-    <decorationType>BEWH_DecoCategory_trinkets</decorationType>
+    <decorationType>BEWH_DecoCategory_Trinkets</decorationType>
     <weaponSpecificDrawData>
       <li>
         <key>BEWH_AstartesBoltCarbine_Oculus</key>
@@ -351,7 +351,7 @@
     <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
     <defaultColour>(240,176,29)</defaultColour>
-    <decorationType>BEWH_DecoCategory_trinkets</decorationType>
+    <decorationType>BEWH_DecoCategory_Trinkets</decorationType>
     <weaponSpecificDrawData>
       <li>
         <key>BEWH_AstartesBoltCarbine_Oculus</key>

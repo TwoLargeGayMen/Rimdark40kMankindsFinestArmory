@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-<!-- Skulls 1 -->
+  <!-- Skulls 1 -->
   <Core40k.WeaponDecorationDef>
     <defName>BEWH_wDecoSkulls_1</defName>
     <label>Skulls 1</label>
@@ -21,10 +21,10 @@
       <!-- <li>BEWH_AstartesPlasmaPistol</li> -->
       <!-- <li>BEWH_AstartesPlasmaIncinerator</li> -->
     </appliesTo>
-      <shaderType>Cutout</shaderType>
+    <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
     <defaultColour>(240,176,29)</defaultColour>
-    <decorationType>BEWH_DecoCategory_decals</decorationType>
+    <decorationType>BEWH_DecoCategory_Decals</decorationType>
     <weaponSpecificDrawData>
       <li>
         <key>BEWH_AstartesBoltCarbine</key>
@@ -119,7 +119,7 @@
     </weaponSpecificDrawData>
   </Core40k.WeaponDecorationDef>
 
-<!-- Skulls 2 -->
+  <!-- Skulls 2 -->
   <Core40k.WeaponDecorationDef>
     <defName>BEWH_wDecoSkulls_2</defName>
     <label>Skulls 2</label>
@@ -139,10 +139,10 @@
       <!-- <li>BEWH_AstartesPlasmaPistol</li> -->
       <!-- <li>BEWH_AstartesPlasmaIncinerator</li> -->
     </appliesTo>
-      <shaderType>Cutout</shaderType>
+    <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
     <defaultColour>(240,176,29)</defaultColour>
-    <decorationType>BEWH_DecoCategory_decals</decorationType>
+    <decorationType>BEWH_DecoCategory_Decals</decorationType>
     <weaponSpecificDrawData>
       <li>
         <key>BEWH_AstartesBoltCarbine</key>
@@ -219,7 +219,7 @@
     </weaponSpecificDrawData>
   </Core40k.WeaponDecorationDef>
 
-<!-- Aquila 1 -->
+  <!-- Aquila 1 -->
   <Core40k.WeaponDecorationDef>
     <defName>BEWH_wDecoAquila_1</defName>
     <label>Aquila 1</label>
@@ -239,10 +239,10 @@
       <!-- <li>BEWH_AstartesPlasmaPistol</li> -->
       <li>BEWH_AstartesPlasmaIncinerator</li>
     </appliesTo>
-      <shaderType>Cutout</shaderType>
+    <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
     <defaultColour>(240,176,29)</defaultColour>
-    <decorationType>BEWH_DecoCategory_decals</decorationType>
+    <decorationType>BEWH_DecoCategory_Decals</decorationType>
     <weaponSpecificDrawData>
       <li>
         <key>BEWH_AstartesBoltCarbine</key>
@@ -337,7 +337,7 @@
     </weaponSpecificDrawData>
   </Core40k.WeaponDecorationDef>
 
-<!-- Aquila 2 -->
+  <!-- Aquila 2 -->
   <Core40k.WeaponDecorationDef>
     <defName>BEWH_wDecoAquila_2</defName>
     <label>Aquila 2</label>
@@ -357,10 +357,10 @@
       <!-- <li>BEWH_AstartesPlasmaPistol</li> -->
       <!-- <li>BEWH_AstartesPlasmaIncinerator</li> -->
     </appliesTo>
-      <shaderType>Cutout</shaderType>
+    <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
     <defaultColour>(240,176,29)</defaultColour>
-    <decorationType>BEWH_DecoCategory_decals</decorationType>
+    <decorationType>BEWH_DecoCategory_Decals</decorationType>
     <weaponSpecificDrawData>
       <li>
         <key>BEWH_AstartesBoltCarbine</key>
@@ -437,7 +437,7 @@
     </weaponSpecificDrawData>
   </Core40k.WeaponDecorationDef>
 
-<!-- Imperialis -->
+  <!-- Imperialis -->
   <Core40k.WeaponDecorationDef>
     <defName>BEWH_wDecoAstartes</defName>
     <label>Imperialis</label>
@@ -457,10 +457,10 @@
       <!-- <li>BEWH_AstartesPlasmaPistol</li> -->
       <li>BEWH_AstartesPlasmaIncinerator</li>
     </appliesTo>
-      <shaderType>Cutout</shaderType>
+    <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
     <defaultColour>(240,176,29)</defaultColour>
-    <decorationType>BEWH_DecoCategory_decals</decorationType>
+    <decorationType>BEWH_DecoCategory_Decals</decorationType>
     <weaponSpecificDrawData>
       <li>
         <key>BEWH_AstartesBoltCarbine</key>
@@ -555,7 +555,7 @@
     </weaponSpecificDrawData>
   </Core40k.WeaponDecorationDef>
 
-<!-- Killcount -->
+  <!-- Killcount -->
   <Core40k.WeaponDecorationDef>
     <defName>BEWH_wDecoKillcount</defName>
     <label>Killcount</label>
@@ -567,10 +567,10 @@
     <appliesTo>
       <li>BEWH_AstartesPlasmaIncinerator</li>
     </appliesTo>
-      <shaderType>Cutout</shaderType>
+    <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
     <defaultColour>(178, 178, 178)</defaultColour>
-    <decorationType>BEWH_DecoCategory_decals</decorationType>
+    <decorationType>BEWH_DecoCategory_Decals</decorationType>
     <weaponSpecificDrawData>
       <li>
         <key>BEWH_AstartesPlasmaIncinerator</key>
