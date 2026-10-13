@@ -12,8 +12,8 @@
             <drawSize>(0.8, 0.8)</drawSize>
         </graphicData>
         <projectile>
-            <damageDef>BEWH_Bolt</damageDef> <!-- change -->
-            <damageAmountBase>25</damageAmountBase>
+            <damageDef>BEWH_Bolt</damageDef>
+            <damageAmountBase>34</damageAmountBase>
             <armorPenetrationBase>0.65</armorPenetrationBase>
             <stoppingPower>1.5</stoppingPower>
             <explosionRadius>1</explosionRadius >
@@ -33,9 +33,9 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>5</damageAmountBase>
+			<damageAmountBase>12</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
-			<armorPenetrationBase>0.45</armorPenetrationBase>
+			<armorPenetrationBase>0.48</armorPenetrationBase>
 			<speed>80</speed>
 			<screenShakeFactor>0.2</screenShakeFactor>
 		</projectile>
@@ -62,12 +62,6 @@
             <screenShakeFactor>0.2</screenShakeFactor>
             <speed>100</speed>
         </projectile>
-        <costList>
-            <ComponentIndustrial>1</ComponentIndustrial>
-        </costList>
-        <recipeMaker>
-            <researchPrerequisite>BEWH_ExpandedBolterRound</researchPrerequisite>
-        </recipeMaker>
         <modExtensions>
             <li Class="Core40k.DefModExtension_AmmoChanger">
                 <unlockedBy>BEWH_ExpandedBolterRound</unlockedBy>
@@ -99,12 +93,6 @@
             <screenShakeFactor>0.2</screenShakeFactor>
             <speed>80</speed>
         </projectile>
-        <costList>
-            <ComponentIndustrial>1</ComponentIndustrial>
-        </costList>
-        <recipeMaker>
-            <researchPrerequisite>BEWH_ExpandedBolterRound</researchPrerequisite>
-        </recipeMaker>
         <modExtensions>
             <li Class="Core40k.DefModExtension_AmmoChanger">
                 <unlockedBy>BEWH_ExpandedBolterRound</unlockedBy>
@@ -132,9 +120,6 @@
             <screenShakeFactor>0.2</screenShakeFactor>
             <speed>100</speed>
         </projectile>
-        <costList>
-            <ComponentIndustrial>1</ComponentIndustrial>
-        </costList>
         <modExtensions>
             <li Class="Core40k.DefModExtension_AmmoChanger">
                 <!-- <effectiveRange>20</effectiveRange>
@@ -164,9 +149,6 @@
             <screenShakeFactor>0.2</screenShakeFactor>
             <speed>73</speed>
         </projectile>
-        <costList>
-            <ComponentIndustrial>1</ComponentIndustrial>
-        </costList>
         <modExtensions>
             <li Class="Core40k.DefModExtension_AmmoChanger">
                 <effectiveRange>18</effectiveRange>
@@ -196,9 +178,6 @@
             <screenShakeFactor>0.2</screenShakeFactor>
             <speed>73</speed>
         </projectile>
-        <costList>
-            <ComponentIndustrial>1</ComponentIndustrial>
-        </costList>
         <modExtensions>
             <li Class="Core40k.DefModExtension_AmmoChanger">
                 <effectiveRange>24</effectiveRange>
