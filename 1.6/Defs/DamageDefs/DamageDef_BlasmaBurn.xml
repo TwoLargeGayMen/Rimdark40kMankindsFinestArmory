@@ -90,7 +90,7 @@
     <combatLogRules>Damage_Bomb</combatLogRules>
      <additionalHediffs>
       <li>
-        <hediff>Seg_DG_NurglesRot</hediff>
+        <hediff>Plague</hediff>
         <severityPerDamageDealt>0.01</severityPerDamageDealt>
         <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
         <inverseStatScaling>true</inverseStatScaling>

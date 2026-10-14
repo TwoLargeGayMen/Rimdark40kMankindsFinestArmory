@@ -23,6 +23,77 @@
         </projectile>
     </ThingDef>
 
+    <ThingDef ParentName="BaseBullet">
+        <defName>Seg_UNDIV_HydrasTeeth</defName>
+        <label>Hydra's Teeth</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+            <texPath>Things/Projectiles/BEWH_BolterRound</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1.2, 1.2)</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Seg_UNDIV_HydraDamage</damageDef> <!-- change -->
+            <damageAmountBase>19</damageAmountBase>
+            <armorPenetrationBase>2</armorPenetrationBase>
+            <stoppingPower>.95</stoppingPower>
+            <explosionRadius>2.38</explosionRadius >
+            <soundExplode>Explosion_Rocket</soundExplode>
+            <screenShakeFactor>0.3</screenShakeFactor>
+            <speed>75</speed>
+        </projectile>
+        <modExtensions>
+			<li Class="Core40k.DefModExtension_AmmoChanger">
+				<effectiveRange>58.9</effectiveRange>
+				<warmupTime>1.5</warmupTime>
+				<shotsPerBurst>1</shotsPerBurst>
+			</li>
+		</modExtensions>
+    </ThingDef>
+
+    <!-- Hellfire -->
+	<HediffDef>
+		<defName>Seg_UNDIV_HydraBurns</defName>
+		<label>Hellfire acid</label>
+		<description>A potent bio-acidic toxin is wreaking havoc on this target's insides.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>600~600</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+			<li Class="seg.HediffCompProperties_RandomDamage">
+				<intervalTicks>60</intervalTicks>
+				<amount>5~10</amount>
+				<type>AcidBurn</type>
+			</li>
+		</comps>
+	</HediffDef>
+    <DamageDef>
+        <defName>Seg_UNDIV_HydraDamage</defName>
+        <label>hellfire acid</label>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <externalViolence>true</externalViolence>
+        <deathMessage>{0} has been shot to death.</deathMessage>
+        <hediff>Gunshot</hediff>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <armorCategory>Sharp</armorCategory>
+        <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+        <isRanged>true</isRanged>
+        <makesAnimalsFlee>true</makesAnimalsFlee>
+        <impactSoundType>Toxic</impactSoundType>
+        <damageEffecter>Impact_Toxic</damageEffecter>
+        <cutCleaveBonus>1</cutCleaveBonus>
+        <additionalHediffs>
+        <li>
+            <hediff>Seg_UNDIV_HydraBurns</hediff>
+            <severityPerDamageDealt>1</severityPerDamageDealt>
+        </li>
+        </additionalHediffs>
+    </DamageDef>
+
+
+
 	<!--Assault Cannon Projectile-->
 	<ThingDef ParentName="BaseBullet">
 		<defName>BEWH_AC_Projectile</defName>
@@ -310,33 +381,7 @@
 		<dealsDamageOnce>false</dealsDamageOnce>
 		<minDistanceToAffect>1</minDistanceToAffect>
 	</VEF.Weapons.ExpandableProjectileDef>
-    <VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
-		<defName>Seg_BombMechaniteFlameShot</defName>
-		<label>Nanite Flame shot</label>
-		<thingClass>VEF.Weapons.FlamethrowProjectile</thingClass>
-		<graphicData>
-			<texPath>Things/Projectiles/Warpflamer_Flame</texPath>
-			<texPathFadeOut>Things/Projectiles/WarpFlamer_End</texPathFadeOut>
-			<shaderType>MoteGlow</shaderType>
-		</graphicData>
-		<projectile>
-			<damageDef>BombMechanite</damageDef>
-			<speed>45</speed>
-			<damageAmountBase>2</damageAmountBase>
-		</projectile>
-
-		<drawOffscreen>true</drawOffscreen>
-		<lifeTimeDuration>55</lifeTimeDuration>
-		<widthScaleFactor>0.65</widthScaleFactor>
-		<heightScaleFactor>1</heightScaleFactor>
-		<startingPositionOffset>(0, 0, -1)</startingPositionOffset>
-		<totalSizeScale>1.15</totalSizeScale>
-		<tickFrameRate>2</tickFrameRate>
-		<finalTickFrameRate>5</finalTickFrameRate>
-		<tickDamageRate>20</tickDamageRate>
-		<dealsDamageOnce>false</dealsDamageOnce>
-		<minDistanceToAffect>1</minDistanceToAffect>
-	</VEF.Weapons.ExpandableProjectileDef>
+   
     <VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>Seg_PlaugeflameShot</defName>
 		<label>Plauge spray</label>

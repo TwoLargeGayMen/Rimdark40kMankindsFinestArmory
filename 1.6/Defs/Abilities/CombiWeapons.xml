@@ -1,0 +1,95 @@
+<Defs>
+<AbilityDef>
+        <defName>Seg_EX_AlchemShot</defName>
+        <label>Servitor alchem blast</label>
+        <description>Fires a stream of promethium flame.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon is dangerous to anything in front of it and can set things - and people - on fire.</description>
+        <writeCombatLog>True</writeCombatLog>
+        <iconPath>Pawn/Wounds/IncendineIgniter/Seg_SERV_GunArmIncendineIgniter_east</iconPath>
+        <showPsycastEffects>False</showPsycastEffects>
+        <cooldownTicksRange>240~360</cooldownTicksRange>
+        <verbProperties>
+            <verbClass>Verb_Shoot</verbClass>
+            <defaultProjectile>Seg_BaneWolfShot</defaultProjectile>
+            <range>14.9</range>
+            <soundCast>ChargeLance_Fire</soundCast>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <ticksBetweenBurstShots>120</ticksBetweenBurstShots>
+            <warmupTime>4</warmupTime>
+            <burstShotCount>1</burstShotCount>
+            <accuracyTouch>0.9</accuracyTouch>
+            <accuracyShort>0.8</accuracyShort>
+            <accuracyMedium>0.6</accuracyMedium>
+            <accuracyLong>0.5</accuracyLong>
+            <ai_IsWeapon>true</ai_IsWeapon>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetHumans>true</canTargetHumans>
+                <canTargetAnimals>true</canTargetAnimals>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+    
+    <AbilityDef>
+        <defName>Seg_EX_PlagueflameShot</defName>
+        <label>Servitor plagueflame blast</label>
+        <description>Fires a stream of promethium flame.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon is dangerous to anything in front of it and can set things - and people - on fire.</description>
+        <writeCombatLog>True</writeCombatLog>
+        <iconPath>Pawn/Wounds/IncendineIgniter/Seg_SERV_GunArmIncendineIgniter_east</iconPath>
+        <showPsycastEffects>False</showPsycastEffects>
+        <cooldownTicksRange>240~360</cooldownTicksRange>
+        <verbProperties>
+            <verbClass>Verb_Shoot</verbClass>
+            <defaultProjectile>Seg_PlaugeflameShot</defaultProjectile>
+            <range>14.9</range>
+            <soundCast>ChargeLance_Fire</soundCast>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <ticksBetweenBurstShots>120</ticksBetweenBurstShots>
+            <warmupTime>4</warmupTime>
+            <burstShotCount>1</burstShotCount>
+            <accuracyTouch>0.9</accuracyTouch>
+            <accuracyShort>0.8</accuracyShort>
+            <accuracyMedium>0.6</accuracyMedium>
+            <accuracyLong>0.5</accuracyLong>
+            <ai_IsWeapon>true</ai_IsWeapon>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetHumans>true</canTargetHumans>
+                <canTargetAnimals>true</canTargetAnimals>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+
+    <AbilityDef>
+        <defName>Seg_EX_CombiRocket_Ability</defName>
+        <label>Servitor combi-rocket</label>
+        <description>Fires a stream of promethium flame.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon is dangerous to anything in front of it and can set things - and people - on fire.</description>
+        <writeCombatLog>True</writeCombatLog>
+        <iconPath>Pawn/Wounds/IncendineIgniter/Seg_SERV_GunArmIncendineIgniter_east</iconPath>
+        <showPsycastEffects>False</showPsycastEffects>
+        <cooldownTicksRange>240~360</cooldownTicksRange>
+        <verbProperties>
+            <verbClass>Verb_Shoot</verbClass>
+            <defaultProjectile>GW_SM_LauncherFrag_Bullet</defaultProjectile>
+            <range>36.9</range>
+            <soundCast>ChargeLance_Fire</soundCast>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <ticksBetweenBurstShots>120</ticksBetweenBurstShots>
+            <warmupTime>4</warmupTime>
+            <burstShotCount>1</burstShotCount>
+            <accuracyTouch>0.9</accuracyTouch>
+            <accuracyShort>0.8</accuracyShort>
+            <accuracyMedium>0.6</accuracyMedium>
+            <accuracyLong>0.5</accuracyLong>
+            <ai_IsWeapon>true</ai_IsWeapon>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetHumans>true</canTargetHumans>
+                <canTargetAnimals>true</canTargetAnimals>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+
+</Defs>

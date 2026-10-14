@@ -41,7 +41,7 @@
     <damageEffecter>Impact_Toxic</damageEffecter>
     <additionalHediffs>
       <li>
-        <hediff>Seg_DG_NurglesRot</hediff>
+        <hediff>ToxicBuildup</hediff>
 		<severityPerDamageDealt>.2</severityPerDamageDealt>
       </li>
     </additionalHediffs>

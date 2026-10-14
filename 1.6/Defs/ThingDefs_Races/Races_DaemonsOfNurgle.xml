@@ -1,5 +1,5 @@
 <Defs>
-  <ThingDef ParentName="BasePawn" Name="Seg_DeathGuard_BaseDaemon" Abstract="True">
+  <!--ThingDef ParentName="BasePawn" Name="Seg_DeathGuard_BaseDaemon" Abstract="True">
     <statBases>
       <ComfyTemperatureMin>-40</ComfyTemperatureMin>
       <ComfyTemperatureMax>60</ComfyTemperatureMax>
@@ -101,5 +101,5 @@
         <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
       </li>
     </tools>
-  </ThingDef>
+  </ThingDef>-->
   </Defs>
